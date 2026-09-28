@@ -20,8 +20,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: v24.10.5
+  REPO_URL: https://github.com/BeeconMini/immortalwrt
+  REPO_BRANCH: 25.12.1
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -203,8 +203,8 @@ jobs:
         to: ${{ env.TELEGRAM_CHAT_ID }}  # 替换为你的Telegram聊天ID或用户名  
         token: ${{ env.TELEGRAM_BOT_TOKEN }}  # 替换为你的Telegram Bot Token  
         message: |
-            基于ImmortalWrt_Stable的X86_64 OpenWrt纯净版更新:
-            https://github.com/LemonCrab666/Actions-ImmortalWrt_Stable/releases/tag/${{ steps.tag.outputs.release_tag }}
+            基于BeeconMini/immortalwrt纯净版更新:
+            https://github.com/zqin758/Actions-ImmortalWrt_Stable/releases/tag/${{ steps.tag.outputs.release_tag }}
             更新日志：
             更新ImmortalWrt_Stable最新源码
             构建分支: ${{ env.REPO_BRANCH }}
